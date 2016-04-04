@@ -1,0 +1,3 @@
+version=3
+http://pecl.php.net/package/radius \
+  /get/radius-([\d\.]*).tgz  debian  uupdate

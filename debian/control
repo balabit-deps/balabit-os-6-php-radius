@@ -1,0 +1,27 @@
+Source: php-radius
+Section: web
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian PHP PECL Maintainers <pkg-php-pecl@lists.alioth.debian.org>
+Uploaders: Ondřej Surý <ondrej@debian.org>,
+           Roberto Lumbreras <rover@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-php,
+               php-dev,
+               pkg-php-tools (>= 1.5~),
+               po-debconf
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-php/php-radius.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-php/php-radius.git;a=summary
+Homepage: http://pecl.php.net/package/radius
+
+Package: php-radius
+Architecture: any
+Depends: ${misc:Depends},
+         ${php:Depends},
+         ${phppear:Debian-Depends},
+         ${shlibs:Depends}
+Recommends: ${phppear:Debian-Recommends}
+Breaks: ${phppear:Debian-Breaks}
+Description: ${phppear:summary}
+ ${phppear:description}
